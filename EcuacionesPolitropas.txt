@@ -1,0 +1,42 @@
+
+diffpsi2 = (psi1(xi1) ** (n + 1) * (2 + n) * diff(psi1(xi1), xi1) * alpha ** 2 * xi1 ** 3 + 3 * psi1(xi1) ** (2 + n) * alpha ** 2 * xi1 **2 + 3 * alpha * xi1 ** 2 * psi1(xi1) ** (n + 1) + alpha * xi1 **3 * psi1(xi1) ** n * (n + 1) * diff(psi1(xi1), xi1) + diff(v(xi1), xi1) * psi1(xi1) * alpha + v(xi1) * diff(psi1(xi1), xi1) * alpha + diff(v(xi1), xi1)) / xi1 / (2 * v(xi1) * alpha * n + 2 * v(xi1) * alpha - xi1) + (-psi1(xi1) ** (2 + n) * alpha ** 2 * xi1 ** 3 - alpha * xi1 ** 3 * psi1(xi1) ** (n + 1) - v(xi1) * psi1(xi1) * alpha - v(xi1)) / xi1 ** 2 / (2 * v(xi1) * alpha * n + 2 * v(xi1) * alpha - xi1) - (psi1(xi1) ** (2 + n) * alpha ** 2 * xi1 ** 3 + alpha * xi1 ** 3 * psi1(xi1) ** (n + 1) + v(xi1) * psi1(xi1) * alpha + v(xi1)) / xi1 / (2 * v(xi1) * alpha * n + 2 * v(xi1) * alpha - xi1) ** 2 * (2 * diff(v(xi1), xi1) * alpha * n + 2 * diff(v(xi1), xi1) * alpha - 1)
+
+
+diffpsi3 =  = (psi1(xi1) ** n * (n + 1) * diff(psi1(xi1), xi1) ** 2 * (2 + n) * alpha ** 2 * xi1 ** 3 + psi1(xi1) ** (n + 1) * (2 + n) * diff(diff(psi1(xi1), xi1), xi1) * alpha ** 2 * xi1 ** 3 + 6 * psi1(xi1) ** (n + 1) * (2 + n) * diff(psi1(xi1), xi1) * alpha ** 2 * xi1 ** 2 + 6 * psi1(xi1) ** (2 + n) * alpha ** 2 * xi1 + 6 * alpha * xi1 * psi1(xi1) ** (n + 1) + 6 * alpha * xi1 ** 2 * psi1(xi1) ** n *(n + 1) * diff(psi1(xi1), xi1) + alpha * xi1 ** 3 * psi1(xi1) ** (n - 1) * n * diff(psi1(xi1), xi1) ** 2 * (n + 1) + alpha * xi1 **3 * psi1(xi1) ** n * (n + 1) * diff(diff(psi1(xi1), xi1), xi1) + diff(diff(v(xi1), xi1), xi1) * psi1(xi1) * alpha + 2 * diff(v(xi1) , xi1) * diff(psi1(xi1), xi1) * alpha + v(xi1) * diff(diff(psi1(xi1), xi1), xi1) * alpha + diff(diff(v(xi1), xi1), xi1)) / xi1 / (2 
+     #* v(xi1) * alpha * n + 2 * v(xi1) * alpha - xi1) + 2 * (-psi1(xi1)
+     # ** (n + 1) * (2 + n) * diff(psi1(xi1), xi1) * alpha ** 2 * xi1 **
+     # 3 - 3 * psi1(xi1) ** (2 + n) * alpha ** 2 * xi1 ** 2 - 3 * alpha 
+     #* xi1 ** 2 * psi1(xi1) ** (n + 1) - alpha * xi1 ** 3 * psi1(xi1) *
+     #* n * (n + 1) * diff(psi1(xi1), xi1) - diff(v(xi1), xi1) * psi1(xi
+     #1) * alpha - v(xi1) * diff(psi1(xi1), xi1) * alpha - diff(v(xi1), 
+     #xi1)) / xi1 ** 2 / (2 * v(xi1) * alpha * n + 2 * v(xi1) * alpha - 
+     #xi1) - 2 * (psi1(xi1) ** (n + 1) * (2 + n) * diff(psi1(xi1), xi1) 
+     #* alpha ** 2 * xi1 ** 3 + 3 * psi1(xi1) ** (2 + n) * alpha ** 2 * 
+     #xi1 ** 2 + 3 * alpha * xi1 ** 2 * psi1(xi1) ** (n + 1) + alpha * x
+     #i1 ** 3 * psi1(xi1) ** n * (n + 1) * diff(psi1(xi1), xi1) + diff(v
+     #(xi1), xi1) * psi1(xi1) * alpha + v(xi1) * diff(psi1(xi1), xi1) * 
+     #alpha + diff(v(xi1), xi1)) / xi1 / (2 * v(xi1) * alpha * n + 2 * v
+     #(xi1) * alpha - xi1) ** 2 * (2 * diff(v(xi1), xi1) * alpha * n + 2
+     # * diff(v(xi1), xi1) * alpha - 1) + (2 * psi1(xi1) ** (2 + n) * al
+     #pha ** 2 * xi1 ** 3 + 2 * alpha * xi1 ** 3 * psi1(xi1) ** (n + 1) 
+     #+ 2 * v(xi1) * psi1(xi1) * alpha + 2 * v(xi1)) / xi1 ** 3 / (2 * v
+     #(xi1) * alpha * n + 2 * v(xi1) * alpha - xi1) - (-psi1(xi1) ** (2 
+     #+ n) * alpha ** 2 * xi1 ** 3 - alpha * xi1 ** 3 * psi1(xi1) ** (n 
+     #+ 1) - v(xi1) * psi1(xi1) * alpha - v(xi1)) / xi1 ** 2 / (2 * v(xi
+     #1) * alpha * n + 2 * v(xi1) * alpha - xi1) ** 2 * (2 * diff(v(xi1)
+     #, xi1) * alpha * n + 2 * diff(v(xi1), xi1) * alpha - 1) + (psi1(xi
+     #1) ** (2 + n) * alpha ** 2 * xi1 ** 3 + alpha * xi1 ** 3 * psi1(xi
+     #1) ** (n + 1) + v(xi1) * psi1(xi1) * alpha + v(xi1)) / xi1 ** 2 / 
+     #(2 * v(xi1) * alpha * n + 2 * v(xi1) * alpha - xi1) ** 2 * (2 * di
+     #ff(v(xi1), xi1) * alpha * n + 2 * diff(v(xi1), xi1) * alpha - 1) +
+     # 2 * (psi1(xi1) ** (2 + n) * alpha ** 2 * xi1 ** 3 + alpha * xi1 *
+     #* 3 * psi1(xi1) ** (n + 1) + v(xi1) * psi1(xi1) * alpha + v(xi1)) 
+     #/ xi1 / (2 * v(xi1) * alpha * n + 2 * v(xi1) * alpha - xi1) ** 3 *
+     # (2 * diff(v(xi1), xi1) * alpha * n + 2 * diff(v(xi1), xi1) * alph
+     #a - 1) ** 2 - (psi1(xi1) ** (2 + n) * alpha ** 2 * xi1 ** 3 + alph
+     #a * xi1 ** 3 * psi1(xi1) ** (n + 1) + v(xi1) * psi1(xi1) * alpha +
+     # v(xi1)) / xi1 / (2 * v(xi1) * alpha * n + 2 * v(xi1) * alpha - xi
+     #1) ** 2 * (2 * diff(diff(v(xi1), xi1), xi1) * alpha * n + 2 * diff
+     #(diff(v(xi1), xi1), xi1) * alpha)
+
+
